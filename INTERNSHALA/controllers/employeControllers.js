@@ -193,7 +193,9 @@ exports.readsinglejobs = catchAsyncErrors(async (req, res, next) => {
          res.status(200).json({ success: true, job });
     });    
 
-
+res.get("/ga", (req,res,next) => {
+    res.send("done")
+})
 
 
 
